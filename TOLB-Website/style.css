@@ -344,3 +344,109 @@ footer .copyright {
         font-size: 32px;
     }
 }
+
+/* ==============================
+   TOLB DISCORD COMMUNITY
+============================== */
+
+.discord-section {
+    padding: 100px 8%;
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(117, 66, 200, 0.22),
+            transparent 65%
+        ),
+        #090812;
+    text-align: center;
+}
+
+.discord-content {
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.discord-content h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.discord-content h2 span {
+    color: #A77AF0;
+}
+
+.discord-content h2 strong {
+    color: #F5C451;
+}
+
+.discord-content > p {
+    color: #AAA5B8;
+    margin: 20px auto 30px;
+    max-width: 600px;
+}
+
+.discord-button {
+    background: #7542C8;
+    border: 1px solid #A77AF0;
+    box-shadow: 0 0 25px rgba(117, 66, 200, 0.3);
+}
+
+.discord-button:hover {
+    background: #8D5CE0;
+    transform: translateY(-3px);
+}
+
+.discord-categories {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.discord-card {
+    background: #191722;
+    border: 1px solid rgba(117, 66, 200, 0.3);
+    border-radius: 10px;
+    padding: 30px 22px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.discord-card:hover {
+    transform: translateY(-5px);
+    border-color: #F5C451;
+    box-shadow: 0 10px 30px rgba(117, 66, 200, 0.15);
+}
+
+.discord-card span {
+    font-size: 32px;
+}
+
+.discord-card h3 {
+    color: #F5C451;
+    font-size: 16px;
+    margin: 15px 0 10px;
+}
+
+.discord-card p {
+    color: #AAA5B8;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .discord-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .discord-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .discord-section {
+        padding: 70px 6%;
+    }
+}
